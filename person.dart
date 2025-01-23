@@ -1,5 +1,16 @@
 void main() {
-  for (int i = 1; i <= 10; i++) {
-    print(i);
+  Person p = Person("Bijoy Rudra paul", 23);
+  p.displayInfo();
+}
+
+class Person {
+  String? name;
+  int? age;
+
+  Person(this.name, this.age);
+
+  void displayInfo() {
+    print(name);
+    print(age);
   }
 }
