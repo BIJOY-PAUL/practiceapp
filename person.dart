@@ -7,10 +7,13 @@ class Person {
   String? name;
   int? age;
 
-  Person(this.name, this.age);
+  String? location;
+
+  Person(this.name, this.age, this.location);
 
   void displayInfo() {
     print(name);
     print(age);
+    print(location);
   }
 }
